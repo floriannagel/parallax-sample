@@ -1,32 +1,71 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simple Parallax Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<!-- Normalizer -->
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<!-- Normalizer -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Beispiel</title>
-</head>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<body>
-	<header class="navbar">
-		<div class="navbar-container">
-			<a href="#">Home</a>
-		</div>
-	</header>
+        <!-- NavBar Fixed -->        
+        <header class="navbar">
+            <div class="container">
+                <a href="#">Blubb</a>
+                <a href="#">Bla</a>
+                <a href="#">Buh</a>
+            </div>
+        </header>
 
-	<section class="content">
-		<h1>Blubb Blubb</h1>
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-	</section>
+        <!-- Begin of main -->
+        <div class="main" id="main">
 
-	<footer class"footer">
-		<h1>Beispiel Footer</h1>
-	</footer>
+            <!-- First Section -->
+            <section class="story" id="first" data-speed="8" data-type="background">
+                
+                <article>
+                    <h2 class="title">Beispiel</h2>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, recusandae, quam a voluptatibus temporibus dignissimos iure. Consectetur, voluptate eaque ea nemo aperiam soluta impedit est deleniti incidunt consequuntur obcaecati veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, veritatis, sapiente, dolor enim quaerat magnam voluptatem repudiandae quos error ex laudantium dolore vel nihil et nostrum ipsum ipsa ea fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, est, autem laudantium sint porro nesciunt sit ex veniam aliquid consequuntur quas tempora excepturi repellendus voluptate deserunt blanditiis eius ab quae.</p>
+                    </div>
+                </article>
 
-</body>
+            </section>
 
+            <!-- Second Section --> 
+            <section class="story" id="second" data-speed="6" data-type="background" data-offsetY="250">
+                 <article>
+                    <h2 class="title">Beispiel</h2>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, recusandae, quam a voluptatibus temporibus dignissimos iure. Consectetur, voluptate eaque ea nemo aperiam soluta impedit est deleniti incidunt consequuntur obcaecati veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, veritatis, sapiente, dolor enim quaerat magnam voluptatem repudiandae quos error ex laudantium dolore vel nihil et nostrum ipsum ipsa ea fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, est, autem laudantium sint porro nesciunt sit ex veniam aliquid consequuntur quas tempora excepturi repellendus voluptate deserunt blanditiis eius ab quae.</p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Third Section --> 
+            <section class="story" id="third" data-speed="6" data-type="background" data-offsetY="250">
+                <!-- <div class="apple" data-type="sprite" data-offsetY="-950" data-Xposition="50%" data-speed="-2"></div> -->
+            </section>
+
+        <!-- End of Main -->
+        </div> 
+        
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
 </html>
